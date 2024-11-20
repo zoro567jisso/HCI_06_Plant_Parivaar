@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Leaf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nature Leaf</h1>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart" id="cart-link" onclick="navigateToCart()">Cart (<span id="cart-count">0</span>)</a> <!-- Cart button with count -->
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Nature Leaf</h2>
+        <p>Your one-stop shop for plants and greenery.</p>
+        <button onclick="showMessage()">Buy Now</button>
+    </section>
+
+    <section class="product-list" id="shop">
+        <h3>Our Plants</h3>
+        <div class="product">
+            <button onclick="showProductDetails('flowering')">Flowering Plant</button>
+        </div>
+        <div class="product">
+            <button onclick="showProductDetails('indoor')">Indoor Plant</button>
+        </div>
+        <div class="product">
+            <button onclick="showProductDetails('succulent')">Succulent</button>
+        </div>
+    </section>
+
+    <section id="product-details">
+        <!-- Product details will be dynamically inserted here -->
+    </section>
+
+    <section id="cart" style="display: none;">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        
+        <h4>Enter Delivery Address:</h4>
+        <form id="address-form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="zip">ZIP Code:</label><br>
+            <input type="text" id="zip" name="zip" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <button type="button" onclick="checkout()">Checkout</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p>© 2024 Nature Leaf. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@natureleaf.com">info@natureleaf.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

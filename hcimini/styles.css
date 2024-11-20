@@ -1,0 +1,427 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.header {
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: green;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: darkgreen;
+}
+
+.product-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping to the next row */
+    overflow-x: auto; /* Allow horizontal scrolling if items overflow */
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 8px 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* General button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Flowering plant section */
+.flowering-plant {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 250px; /* Adjust width of individual plant cards */
+}
+
+.flowering-plant img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.flowering-plant h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.flowering-plant p {
+    font-size: 1em;
+    color: #555;
+}
+.flowering-plant {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 20px; /* Space between items */
+    text-align: center; /* Align text and images */
+}
+
+#product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing between items */
+}
+/* Basic styling for the cart */
+#cart {
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: none; /* Hidden by default */
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+#cart-link {
+    font-weight: bold;
+}
+
+.product-list {
+    margin-top: 20px;
+}
+
+.product {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Product Section */
+.product-list {
+    display: flex; /* Flexbox to display items horizontally */
+    justify-content: space-around; /* Distribute the items evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0;
+}
+
+.product {
+    margin: 10px;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product Details Section */
+.flowering-plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 200px; /* Limit width to prevent overflow */
+    text-align: center;
+}
+
+.flowering-plant img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.flowering-plant button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+/* Cart Section */
+#cart {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+#cart-items {
+    margin-top: 20px;
+}
+/* Styling for the plant container to display items horizontally */
+.flowering-plant-container, .indoor-plant-container, .succulent-plant-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the items horizontally */
+    margin-top: 20px;
+}
+
+.flowering-plant, .indoor-plant, .succulent-plant {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px; /* Fixed width for each plant card */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flowering-plant img, .indoor-plant img, .succulent-plant img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: #ecf0f1;
+}
+
+.product-list, .product-details {
+    padding: 2em;
+}
+
+/* Style for product container */
+.plant-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap rows when needed */
+    gap: 1.5em; /* Spacing between items */
+    justify-content: space-around; /* Even spacing between items */
+    margin-top: 1em;
+}
+
+.plant {
+    flex: 0 1 30%; /* Each plant takes up 30% of the row */
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plant img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+/* Cart and form styles */
+#cart {
+    display: none;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
+footer {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
